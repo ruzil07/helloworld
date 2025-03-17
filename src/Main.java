@@ -19,36 +19,36 @@ public class Main {
         byte k = 67;
         System.out.println();
         System.out.println("Задание 3");
-        byte LyudmilaPavlovna = 23;
-        byte AnnaSergeevna = 27;
-        byte EkaterinaAndreevna = 30;
-        short totalSheetsOfPaper = 480;
-        short totalStudents = (short) (LyudmilaPavlovna + AnnaSergeevna + EkaterinaAndreevna);
+        byte lyudmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        int totalSheetsOfPaper = 480;
+        short totalStudents = (short) (lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         byte sheetsForEachStudent = (byte) (totalSheetsOfPaper / totalStudents);
         System.out.println("На каждого ученика рассчитано " + sheetsForEachStudent + " листов бумаги");
 
         System.out.println();
         System.out.println("Задание 4");
-        byte MachinePerformanceIn2Minutes = 16;
-        byte MachinePerformanceIn1Minutes = (byte) 16 / 2;
-        byte TwentyMinutes = 20;
-        short MachinePerformanceIn20Minutes = (short) (MachinePerformanceIn1Minutes * TwentyMinutes);
-        System.out.println("За " + TwentyMinutes + " машина произвела " + MachinePerformanceIn20Minutes + " штук");
+        byte machinePerformanceIn2Minutes = 16;
+        byte machinePerformanceIn1Minutes = (byte) 16 / 2;
+        byte twentyMinutes = 20;
+        short machinePerformanceIn20Minutes = (short) (machinePerformanceIn1Minutes * twentyMinutes);
+        System.out.println("За " + twentyMinutes + " машина произвела " + machinePerformanceIn20Minutes + " штук");
 
         byte hoursInADday = 24;
         byte howManyMinutesInOneHour = 60;
         short perDayMinutes = (short) (hoursInADday * howManyMinutesInOneHour);
-        short MachinePerformanceInPerDay = (short) (MachinePerformanceIn1Minutes * perDayMinutes);
-        System.out.println("В сутки" + " машина произвела " + MachinePerformanceInPerDay + " штук");
+        short machinePerformanceInPerDay = (short) (machinePerformanceIn1Minutes * perDayMinutes);
+        System.out.println("В сутки" + " машина произвела " + machinePerformanceInPerDay + " штук");
 
-        byte NumberOfDays = 3;
-        short inThreeDaysMinutes = (short) (NumberOfDays * perDayMinutes);
-        int MachinePerformanceinThreeDays = MachinePerformanceIn1Minutes * inThreeDaysMinutes;
-        System.out.println("За 3 дня" + " машина произвела " + MachinePerformanceinThreeDays + " штук");
+        byte numberOfDays = 3;
+        short inThreeDaysMinutes = (short) (numberOfDays * perDayMinutes);
+        int machinePerformanceinThreeDays = machinePerformanceIn1Minutes * inThreeDaysMinutes;
+        System.out.println("За 3 дня" + " машина произвела " + machinePerformanceinThreeDays + " штук");
 
         byte totalDaysInOneMonth = 30;
         int inOneMonthOnlyMinutes = totalDaysInOneMonth * perDayMinutes;
-        int inOneMonth = inOneMonthOnlyMinutes * MachinePerformanceIn1Minutes;
+        int inOneMonth = inOneMonthOnlyMinutes * machinePerformanceIn1Minutes;
         System.out.println("За 1 месяц" + " машина произвела " + inOneMonth + " штук");
 
         System.out.println();
@@ -68,9 +68,9 @@ public class Main {
         byte weightOfOneBanana = 80;
         short totalWeightBanana = (short) (bananas * weightOfOneBanana);
 
-        short TotalMilkInLiters = 200;
+        short totalMilkInLiters = 200;
         byte oneHundredGramsOfMilk = 100;
-        byte amountOfOneHundredGramsOfMilk = (byte) (TotalMilkInLiters / oneHundredGramsOfMilk);
+        byte amountOfOneHundredGramsOfMilk = (byte) (totalMilkInLiters / oneHundredGramsOfMilk);
         byte oneHundredLitersInGams = 105;
         short numberOfGramsOfMilk = (short) (amountOfOneHundredGramsOfMilk * oneHundredLitersInGams);
 
@@ -95,50 +95,50 @@ public class Main {
         short needToResetGram = (short) (needToReset * conversionToGramWeight);
         short athleteLittleLose = 250;
         short athleteLoseLot = 500;
-        short LosesFewDays = (short) (needToResetGram / athleteLittleLose);
-        short LosesManyDays = (short) (needToResetGram / athleteLoseLot);
-        System.out.println("Eсли спортсмен будет терять каждый день по 250 грамм " + LosesFewDays
+        short losesFewDays = (short) (needToResetGram / athleteLittleLose);
+        short losesManyDays = (short) (needToResetGram / athleteLoseLot);
+        System.out.println("Eсли спортсмен будет терять каждый день по 250 грамм " + losesFewDays
                 + " дней уйдет на похудение.");
-        System.out.println("Eсли спортсмен будет терять каждый день по 500 грамм " + LosesManyDays
+        System.out.println("Eсли спортсмен будет терять каждый день по 500 грамм " + losesManyDays
                 + " дней уйдет на похудение.");
-        byte averageDays = (byte) ((LosesFewDays + LosesManyDays) / 2);
+        byte averageDays = (byte) ((losesFewDays + losesManyDays) / 2);
         System.out.println("В среднем может потребоваться " + averageDays
                 + " дней, чтобы добиться результата похудения!");
 
         System.out.println();
         System.out.println("Задание 8");
-        int MashaGets = 67760;
-        int DenisGets = 83690;
-        int ChristinaGets = 76230;
+        int mashaGets = 67760;
+        int denisGets = 83690;
+        int christinaGets = 76230;
 
         float tenPercent = 1.1f;
-        float MashaIncreased = (MashaGets * (float) tenPercent);
-        float DenisIncreased = (DenisGets * (float) tenPercent);
-        float ChristinaIncreased = (ChristinaGets * (float) tenPercent);
+        float mashaIncreased = (mashaGets * (float) tenPercent);
+        float denisIncreased = (denisGets * (float) tenPercent);
+        float christinaIncreased = (christinaGets * (float) tenPercent);
 
 
         byte billingPeriod = 12;
-        int MashaAnnualCurrent = (MashaGets * billingPeriod);
-        int DenisAnnualCurrent = (DenisGets * billingPeriod);
-        int ChristinaAnnualCurrent = (ChristinaGets * billingPeriod);
+        int mashaAnnualCurrent = (mashaGets * billingPeriod);
+        int denisAnnualCurrent = (denisGets * billingPeriod);
+        int christinaAnnualCurrent = (christinaGets * billingPeriod);
 
 
-        float MashaAnnualIncreased = (float) (MashaIncreased * billingPeriod);
-        float DenisAnnualIncreased = (float) (DenisIncreased * billingPeriod);
-        float ChristinaAnnualIncreased = (float) (ChristinaIncreased * billingPeriod);
+        float mashaAnnualIncreased = (float) (mashaIncreased * billingPeriod);
+        float denisAnnualIncreased = (float) (denisIncreased * billingPeriod);
+        float christinaAnnualIncreased = (float) (christinaIncreased * billingPeriod);
 
 
-        float MashaIncomeDifference = (float) MashaAnnualIncreased % MashaAnnualCurrent;
-        System.out.println("Маша теперь получает " + MashaIncreased + " рублей. Годовой доход вырос на "
-                + MashaIncomeDifference + " рублей.");
+        float mashaIncomeDifference = (float) mashaAnnualIncreased - mashaAnnualCurrent;
+        System.out.println("Маша теперь получает " + mashaIncreased + " рублей. Годовой доход вырос на "
+                + mashaIncomeDifference + " рублей.");
 
-        float DenisIncomeDifference = (float) (DenisAnnualIncreased % DenisAnnualCurrent);
-        System.out.println("Денис теперь получает " + DenisIncreased + " рублей. Годовой доход вырос на "
-                + DenisIncomeDifference + " рублей.");
+        float denisIncomeDifference = (float) (denisAnnualIncreased - denisAnnualCurrent);
+        System.out.println("Денис теперь получает " + denisIncreased + " рублей. Годовой доход вырос на "
+                + denisIncomeDifference + " рублей.");
 
-        float ChristinaIncomeDifference = (float) (ChristinaAnnualIncreased % ChristinaAnnualCurrent);
-        System.out.println("Кристин теперь получает " + ChristinaIncreased + " рублей. Годовой доход вырос на "
-                + ChristinaIncomeDifference + " рублей.");
+        float christinaIncomeDifference = (float) (christinaAnnualIncreased - christinaAnnualCurrent);
+        System.out.println("Кристин теперь получает " + christinaIncreased + " рублей. Годовой доход вырос на "
+                + christinaIncomeDifference + " рублей.");
 
 
     }
