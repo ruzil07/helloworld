@@ -27,17 +27,14 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задание 4");
-        int age1 = 30;
+        int age1 = 5;
         if (age1 >= 2 && age1 <= 6) {
             System.out.println("Если возраст человека равен " + age1 + "," + " то ему нужно ходить в детский сад.");
-        }
-        if (age1 >= 7 && age1 <= 17) {
+        } else if (age1 >= 7 && age1 <= 17) {
             System.out.println("Если возраст человека равен " + age1 + "," + " то ему нужно ходить в школу.");
-        }
-        if (age1 >= 18 && age1 <= 24) {
+        } else if (age1 >= 18 && age1 <= 24) {
             System.out.println("Если возраст человека равен " + age1 + "," + " то его место в университете.");
-        }
-        if (age1 >= 25) {
+        } else if (age1 >= 25) {
             System.out.println("Если возраст человека равен " + age1 + "," + " то ему пора ходить на работу.");
         }
         System.out.println();
