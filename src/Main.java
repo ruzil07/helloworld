@@ -2,14 +2,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Задание 1");
-        int clientOS = 0;
-        switch (clientOS) {
-            case 0:
-                System.out.println("Установите версию приложения для iOS по ссылке");
-                break;
-            default:
-                System.out.println("Установите версию приложения для Android по ссылке");
-        }
+        int clientOS = 1;
+
+        if (clientOS==0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+            }
+
         System.out.println();
         System.out.println("Задание 2");
 
@@ -19,17 +19,17 @@ public class Main {
         if (clientDeviceYear < 2015) {
             if (clientOS2 == 0) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
+            } else
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-        } else {
+
+        } else
             if (clientOS2 == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
-            } else {
+            } else
                 System.out.println("Установите версию приложения для Android по ссылке");
-            }
 
-        }
+
+
         System.out.println();
         System.out.println("Задание 3");
 
@@ -44,7 +44,7 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задание 4");
-        int deliveryDistance = 101;
+        int deliveryDistance = 70;
         int deliveryTime = 1;
         if (deliveryDistance > 100) {
             System.out.println("нет доставки");
@@ -54,6 +54,7 @@ public class Main {
             deliveryTime = deliveryTime + 1;
             System.out.println("Потребуется дней: " + deliveryTime);
         } else if (deliveryDistance <= 100) {
+            // Доставка в пределах 60 км до 100 км добавляет еще одни сутки. Ну три же должна быть и выходит цифра ТРИ!?
             deliveryTime = deliveryTime + deliveryTime + 1;
             System.out.println("Потребуется дней: " + deliveryTime);
         }
