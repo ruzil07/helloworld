@@ -4,11 +4,11 @@ public class Main {
         System.out.println("Задание 1");
         int clientOS = 1;
 
-        if (clientOS==0) {
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-            } else {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
-            }
+        }
 
         System.out.println();
         System.out.println("Задание 2");
@@ -22,12 +22,10 @@ public class Main {
             } else
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
 
+        } else if (clientOS2 == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
         } else
-            if (clientOS2 == 0) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            } else
-                System.out.println("Установите версию приложения для Android по ссылке");
-
+            System.out.println("Установите версию приложения для Android по ссылке");
 
 
         System.out.println();
