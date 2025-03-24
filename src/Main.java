@@ -61,44 +61,28 @@ public class Main {
         System.out.println();
         System.out.println("Задание 5");
 
-        int monthNumber = 13;
+        int monthNumber = 12;
 
         switch (monthNumber) {
             case 1:
-                System.out.println("Принадлежит к сезону зима");
-                break;
             case 2:
+            case 12:
                 System.out.println("Принадлежит к сезону зима");
                 break;
             case 3:
-                System.out.println("Принадлежит к сезону весна");
-                break;
             case 4:
-                System.out.println("Принадлежит к сезону весна");
-                break;
             case 5:
                 System.out.println("Принадлежит к сезону весна");
                 break;
             case 6:
-                System.out.println("Принадлежит к сезону лета");
-                break;
             case 7:
-                System.out.println("Принадлежит к сезону лета");
-                break;
             case 8:
                 System.out.println("Принадлежит к сезону лета");
                 break;
             case 9:
-                System.out.println("Принадлежит к сезону осень");
-                break;
             case 10:
-                System.out.println("Принадлежит к сезону осень");
-                break;
             case 11:
                 System.out.println("Принадлежит к сезону осень");
-                break;
-            case 12:
-                System.out.println("Принадлежит к сезону зима");
                 break;
             default:
                 System.out.println("Такого месяца не существует");
