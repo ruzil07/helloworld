@@ -8,7 +8,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание 2");
-        for (int i = 10; i >= 0; i = i - 2) {
+        for (int i = 10; i >= 1; i = i - 1) {
             System.out.println(i);
         }
         System.out.println();
@@ -18,7 +18,7 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задание 4");
-        for (int i = -10; i <= 10; i = i + 1) {
+        for (int i = 10; i >= -10; i = i - 1) {
             System.out.println(i);
         }
         System.out.println();
@@ -53,6 +53,8 @@ public class Main {
             savings1 = savings1 + save1;
             System.out.println("Месяц " + i + " сумма накоплений равна " + savings1 + " рублей");
         }
+        // Объясните пожалуйста 10 затание как решить ? Как понять : Код неправильно выводит таблицу умножения на 2,
+        // числа должны умножаться, а не увеличиваться на 2.
         System.out.println();
         System.out.println("Задание  10");
         int constant = 2;
