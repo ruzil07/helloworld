@@ -2,76 +2,69 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Задание 1");
-        int age = 12;
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
-        } else {
-            System.out.println("Если возраст человека равен " + age + ",он не достиг совершеннолетия," +
-                    " нужно немного подождать");
+        for (int i = 0; i <= 10; i = i + 1) {
+            System.out.println(i);
         }
+
         System.out.println();
         System.out.println("Задание 2");
-        int temperature = 6;
-        if (temperature < 5) {
-            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку ");
-        } else {
-            System.out.println("На улице " + temperature + " градусов, можно идти без шапки ");
+        for (int i = 10; i >= 1; i = i - 1) {
+            System.out.println(i);
         }
         System.out.println();
         System.out.println("Задание 3");
-        int speed = 65;
-        if (speed >= 60) {
-            System.out.println("Если скорость " + speed + "," + " то придется заплатить штраф.");
-        } else {
-            System.out.println("Если скорость " + speed + "," + " можно ездить спокойно.");
+        for (int i = 0; i <= 17; i = i + 2) {
+            System.out.println(i);
         }
         System.out.println();
         System.out.println("Задание 4");
-        int age1 = 5;
-        if (age1 >= 2 && age1 <= 6) {
-            System.out.println("Если возраст человека равен " + age1 + "," + " то ему нужно ходить в детский сад.");
-        } else if (age1 >= 7 && age1 <= 17) {
-            System.out.println("Если возраст человека равен " + age1 + "," + " то ему нужно ходить в школу.");
-        } else if (age1 >= 18 && age1 <= 24) {
-            System.out.println("Если возраст человека равен " + age1 + "," + " то его место в университете.");
-        } else if (age1 >= 25) {
-            System.out.println("Если возраст человека равен " + age1 + "," + " то ему пора ходить на работу.");
+        for (int i = 10; i >= -10; i = i - 1) {
+            System.out.println(i);
         }
         System.out.println();
         System.out.println("Задание 5");
-        int age5 = 2;
-        if (age5 < 5) {
-            System.out.println("Если возраст ребенка равен " + age5 + "," + " то ему нельзя кататься на аттракционе");
-        }
-        if (age5 >= 5 && age5 < 14) {
-            System.out.println("Если возраст ребенка равен " + age5 + "," + " то ему можно кататься на аттракционе" +
-                    " в сопровождении");
-        }
-        if (age5 >= 14) {
-            System.out.println("Если возраст ребенка равен " + age5 + "," + " то он может кататься без " +
-                    "сопровождения взрослого");
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i + " год является високосным");
         }
         System.out.println();
         System.out.println("Задание 6");
-        int human = 102;
-        if (human <= 60) {
-            System.out.println("Вагоне есть сидщее места.");
-        } else if (human > 60 && human <= 102) {
-            System.out.println("Вагоне есть стоящее места.");
-        } else if (human > 102) {
-            System.out.println("Вагон уже полностью забит.");
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
         }
         System.out.println();
         System.out.println("Задание 7");
-        int one = 30;
-        int two = 22;
-        int three = 10;
-        if (one > two && one > three) {
-            System.out.println(one);
-        } else if (two > one && two > three) {
-            System.out.println(two);
-        } else if (three > one && three > two) {
-            System.out.println(three);
+        for (int i = 1; i <= 512; i = i + i) {
+            System.out.println(i);
+        }
+        System.out.println();
+        System.out.println("Задание 8");
+        int save = 29000;
+        int savings = 0;
+        for (int i = 1; i <= 12; i++) {
+            savings = savings + save;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
+        }
+        System.out.println();
+        System.out.println("Задание 9");
+        int save1 = 29000;
+        int savings1 = 0;
+        for (int i = 1; i <= 12; i++) {
+            savings1 = savings1 + savings1 / 100;
+            savings1 = savings1 + save1;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + savings1 + " рублей");
+        }
+        // Объясните пожалуйста 10 затание как решить ? Как понять : Код неправильно выводит таблицу умножения на 2,
+        // числа должны умножаться, а не увеличиваться на 2.
+        // Условие задачи: Напишите программу, которая выводит в консоль таблицу умножения на 2: 2*1=2,,,
+        System.out.println();
+        System.out.println("Задание  10");
+        int constant = 2;
+        int number = 0;
+        for (int i = 1; i <= 10; i++) {
+            number = constant + number;
+            System.out.println("2 * " + i + " = " + number);
+
         }
     }
 }
+
