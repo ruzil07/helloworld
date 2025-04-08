@@ -5,8 +5,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Задание 1");
-        // как будь то китаец написпал условие этого задания. Не по русский написано. очень сложно понять какой
-        // ответ хотите увидеть.
+
         int[] intArr = new int[3];
         intArr[0] = 1;
         intArr[1] = 2;
@@ -25,8 +24,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание 2");
-        //Распечатайте на отдельной строчке элементы каждого массива по порядку через запятую. В конце строки
-        // запятую ставить не надо.- Какого массива ? Откуда взять какой массив? Я взял с первого задания.
+
         for (int i = 0; i < intArr.length; i++) {
             if (i == intArr.length - 1) {
                 System.out.println(intArr[i]);
