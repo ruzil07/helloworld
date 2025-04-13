@@ -23,11 +23,10 @@ public class Main {
 
             }
         }
-
         int minPayents = payments[0];
         for (int i = 0; i < payments.length; i++) {
-            if (payments[i] < minPayents) ;
-            minPayents = payments[i];
+            if (payments[i] < minPayents)
+                minPayents = payments[i];
         }
         System.out.println("Минимальная сумма трат за неделю составила " + minPayents + " рублей. Максимальная сумма" +
                 " трат за неделю составила " + maxPayments + " рублей ");
@@ -35,7 +34,6 @@ public class Main {
         System.out.println();
         System.out.println("Задание 3");
 
-        // Переменная для хранения суммы всех трат
         int totalPayents = 0;
         for (int i : payments) {
             totalPayents += i;
@@ -59,14 +57,13 @@ public class Main {
             reverseFullName[i] = reverseFullName[index];
             reverseFullName[index] = value;
         }
-
         for (int i = 0; i < reverseFullName.length; i++) {
             System.out.print(reverseFullName[i]);
         }
-        System.out.println();
+
+
     }
 }
-
 
 
 
