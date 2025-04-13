@@ -23,7 +23,7 @@ public class Main {
 
             }
         }
-
+// Может вы не внимательно посмотрели? У меня вот формула который находит минимальное значение :
         int minPayents = payments[0];
         for (int i = 0; i < payments.length; i++) {
             if (payments[i] < minPayents) ;
