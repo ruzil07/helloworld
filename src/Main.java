@@ -2,69 +2,73 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Задание 1");
-        for (int i = 0; i <= 10; i = i + 1) {
-            System.out.println(i);
+        int[] payments = {1, 2, 3, 4, 5};
+        payments[0] = 3;
+        payments[1] = 5;
+        payments[2] = 6;
+        payments[3] = 8;
+        payments[4] = 1;
+        int sum = 0;
+        for (int element : payments) {
+            sum += element;
         }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
         System.out.println();
         System.out.println("Задание 2");
-        for (int i = 10; i >= 1; i = i - 1) {
-            System.out.println(i);
+        int maxPayments = -1;
+        for (int i = 0; i < payments.length; i++) {
+            if (payments[i] > maxPayments) {
+                maxPayments = payments[i];
+
+            }
         }
+        int minPayents = payments[0];
+        for (int i = 0; i < payments.length; i++) {
+            if (payments[i] < minPayents)
+                minPayents = payments[i];
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minPayents + " рублей. Максимальная сумма" +
+                " трат за неделю составила " + maxPayments + " рублей ");
+
         System.out.println();
         System.out.println("Задание 3");
-        for (int i = 0; i <= 17; i = i + 2) {
-            System.out.println(i);
+
+        int totalPayents = 0;
+        for (int i : payments) {
+            totalPayents += i;
         }
+        double averagePayents = (double) totalPayents / payments.length;
+        System.out.println("Средняя сумма трат за месяц составила " + averagePayents + " рублей");
+
         System.out.println();
         System.out.println("Задание 4");
-        for (int i = 10; i >= -10; i = i - 1) {
-            System.out.println(i);
-        }
-        System.out.println();
-        System.out.println("Задание 5");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным");
-        }
-        System.out.println();
-        System.out.println("Задание 6");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.println(i);
-        }
-        System.out.println();
-        System.out.println("Задание 7");
-        for (int i = 1; i <= 512; i = i + i) {
-            System.out.println(i);
-        }
-        System.out.println();
-        System.out.println("Задание 8");
-        int save = 29000;
-        int savings = 0;
-        for (int i = 1; i <= 12; i++) {
-            savings = savings + save;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
-        }
-        System.out.println();
-        System.out.println("Задание 9");
-        int save1 = 29000;
-        int savings1 = 0;
-        for (int i = 1; i <= 12; i++) {
-            savings1 = savings1 + savings1 / 100;
-            savings1 = savings1 + save1;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + savings1 + " рублей");
-        }
-        // Объясните пожалуйста 10 затание как решить ? Как понять : Код неправильно выводит таблицу умножения на 2,
-        // числа должны умножаться, а не увеличиваться на 2.
-        // Условие задачи: Напишите программу, которая выводит в консоль таблицу умножения на 2: 2*1=2,,,
-        System.out.println();
-        System.out.println("Задание  10");
-        int constant = 2;
-        int number = 0;
-        for (int i = 1; i <= 10; i++) {
-            number = constant + number;
-            System.out.println("2 * " + i + " = " + number);
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
+        for (int i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[i]);
         }
+        System.out.println();
+
+        for (int i = 0; i < reverseFullName.length / 2; i++) {
+            int index = reverseFullName.length - 1 - i;
+
+            char value = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[index];
+            reverseFullName[index] = value;
+        }
+        for (int i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[i]);
+        }
+
+
     }
 }
+
+
+
+
+
+
+
 
